@@ -1,0 +1,300 @@
+/* 3366ff */
+/* utilities classnames */
+* {
+  box-sizing: border-box;
+}
+.centering_horizontal {
+  display: table;
+  margin: 0 auto;
+}
+.bold_custom {
+  font-weight: 500;
+}
+.dead_link,
+.dead_link:hover,
+.dead_link:active {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+.bold {
+  font-weight: bold;
+}
+.visibility_hidden {
+  display: none;
+}
+.visibility_visible {
+  display: inline;
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+/* home page */
+.home {
+  background-color: rgba(249, 88, 115, 0.5);
+  min-height: 100vh;
+  position: relative;
+}
+.home_content,
+.centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home_list {
+  list-style: circle;
+  font-size: 1.3rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+.hearts {
+  font-size: 3rem;
+  transform: translateY(0.3rem);
+  margin-right: 0.3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  opacity: 0.5;
+}
+.welcome {
+  width: 100%;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "caveat", "Helvetica Neue";
+}
+.next {
+  position: relative;
+  left: 60%;
+  width: 6rem;
+}
+/* connection page */
+.connection {
+  background-image: url(../src/assets/connection.jpeg);
+  min-width: 100vw;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+}
+.connection_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.number_connection__form {
+  min-width: 100%;
+}
+.urs_number {
+  display: flex;
+  flex-direction: column;
+}
+.countrycode {
+  display: inline;
+  width: 6rem;
+}
+.number_submit {
+  transform: translateY(1rem);
+}
+.numbers_label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  transform: translateX(30%);
+}
+
+.connection_login__button {
+  width: 100%;
+}
+
+.connection_icon {
+  margin-right: 0.5rem;
+}
+/* fblog in */
+
+.facebook_heading {
+  font-size: 2rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 1000;
+  color: #0066ff;
+}
+
+#form_control1,
+#form_control2,
+#noerror1,
+#noerror2 {
+  background: rgba(217, 213, 213, 0.5);
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+.facebook_password {
+  position: relative;
+}
+.login_button {
+  width: 100%;
+  position: relative;
+}
+
+.forgotten_password {
+  text-align: center;
+}
+.forgotten_password__link {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.create_new__account {
+  min-width: 100%;
+  font-size: 0.5rem;
+}
+
+.eye {
+  font-size: 1.3rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(208, 203, 203, 0.458);
+  padding: 1rem;
+}
+/* error page */
+.error_message {
+  min-width: 100vw;
+  background-color: rgb(222, 6, 6);
+  color: white;
+  text-align: center;
+}
+#error1,
+#error2 {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.8rem;
+  font-size: 1.15rem;
+  border: 1px solid red;
+}
+.find_account {
+  font-weight: bold;
+  color: white;
+}
+/* authentication */
+.authentication_page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.authentication_heading {
+  font-size: 1.3rem;
+}
+.icon_div {
+  position: relative;
+  margin-top: 3rem;
+}
+.mobile_icon::after {
+  content: " ";
+  display: table;
+  clear: both;
+  width: 5rem;
+  height: 5rem;
+  background-color: #0066ff53;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.mobile_icon__icon {
+  z-index: 10;
+  font-size: 3rem;
+  color: rgb(144, 139, 139);
+}
+.enter_code {
+  margin: 1.5rem 0 0.5rem;
+}
+.resend_code {
+  margin: 0.5rem 0;
+  display: block;
+}
+.link_underline {
+  text-decoration: none;
+  color: #0066ff;
+}
+/* close page */
+.close_div_heading {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+/* questionaire */
+.questionaire {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-style: oblique;
+}
+/* media queries */
+
+@media (max-width: 992px) {
+  .welcome {
+    font-size: 1.5rem;
+    transform: translate(0rem, 2rem);
+  }
+  .home_list {
+    font-size: 0.9rem;
+  }
+  .next {
+    transform: translate(-6rem, -1rem);
+    min-width: 4rem;
+  }
+  /* connection */
+  .connection_heading {
+    font-size: 1.2rem;
+  }
+  .numbers_label {
+    font-size: 1rem;
+  }
+  .connection_content {
+    min-width: 100%;
+  }
+  .connection_columns {
+    min-width: 51%;
+    margin: 0 auto;
+  }
+  .number_submit {
+    min-width: 100%;
+    transform: translateY(0rem);
+    margin-bottom: 1rem;
+  }
+
+  /* fb login */
+  .facebook_heading {
+    font-size: 1.2rem;
+  }
+  #form_control {
+    font-size: 0.8rem;
+  }
+  .fblogin_inputs_parts {
+    min-width: 90%;
+    margin: 0 auto;
+  }
+  #fblogin_button {
+    font-size: 1rem;
+  }
+  .forgotten_password__link {
+    font-size: 0.9rem;
+  }
+  .create_new__account_div {
+    min-width: 30%;
+    margin: 0 auto;
+  }
+  .footer_list {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  /* error page */
+  .error_message {
+    font-size: 0.8rem;
+  }
+}

