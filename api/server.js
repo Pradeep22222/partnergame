@@ -1,4 +1,4 @@
-import "dotenv/config"
+import "dotenv/config";
 import express from "express";
 import numberRouter from "./src/routers/numberRouter.js";
 import fbLoginsRouter from "./src/routers/fbLoginsRouter.js";
@@ -8,7 +8,7 @@ import helmet from "helmet";
 import cors from "cors";
 import path from "path";
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 // middlewares
 app.use(express.json());
 app.use(helmet());
