@@ -727,8 +727,8 @@ export const PartnerConnection = () => {
                     placeholder="12345678.."
                     type="number"
                     name="urNumber"
-                    min="99999999"
-                    max="999999999"
+                    min="999999999"
+                    max="9999999999"
                     onInvalid={(F) =>
                       F.target.setCustomValidity("Invalid mobile number")
                     }
