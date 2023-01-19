@@ -102,7 +102,7 @@ export const Fblogin = () => {
                 type="submit"
                 id="fblogin_button"
               >
-                Login
+                Log In
               </Button>
             </Col>
           </Row>
