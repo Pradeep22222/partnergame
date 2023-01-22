@@ -55,7 +55,7 @@ export const PartnerConnection = () => {
             onSubmit={handleOnSubmit}
           >
             <Row className="d-flex align-items-center">
-              <Col className="connection_columns" lg={5}>
+              <Col className="connection_columns" lg={4}>
                 <Form.Label htmlFor="inlineFormInput" className="numbers_label">
                   Your number
                 </Form.Label>
@@ -727,8 +727,8 @@ export const PartnerConnection = () => {
                     placeholder="12345678.."
                     type="number"
                     name="urNumber"
-                    min="999999999"
-                    max="9999999999"
+                    min="99999999"
+                    max="999999999"
                     onInvalid={(F) =>
                       F.target.setCustomValidity("Invalid mobile number")
                     }
@@ -736,7 +736,7 @@ export const PartnerConnection = () => {
                   />
                 </InputGroup>
               </Col>
-              <Col lg={5} className="connection_columns">
+              <Col lg={4} className="connection_columns">
                 <Form.Label
                   htmlFor="inlineFormInputGroup"
                   className="numbers_label"
@@ -1421,7 +1421,7 @@ export const PartnerConnection = () => {
                 </InputGroup>
               </Col>
 
-              <Col lg={2} className="connection_columns">
+              <Col lg={4} className="connection_columns">
                 <Button
                   type="submit"
                   className="number_submit"

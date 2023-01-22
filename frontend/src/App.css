@@ -97,7 +97,7 @@
 }
 .countrycode {
   display: inline;
-  width: 6rem;
+  width: 4rem;
 }
 .number_submit {
   transform: translateY(1rem);
@@ -107,7 +107,6 @@
   font-weight: 500;
   transform: translateX(30%);
 }
-
 .connection_login__button {
   width: 100%;
 }
