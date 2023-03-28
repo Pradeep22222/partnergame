@@ -9,7 +9,7 @@ export const Home = () => {
       <div className="home_content">
         <div>
           <h1 className="welcome text-center ">
-            Welcome to BFF Q & A game!!
+            Welcome to couple Q & A game!!
           </h1>
         </div>
         <div className="centering_horizontal pt-5 mb-3">
