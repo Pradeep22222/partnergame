@@ -32,13 +32,13 @@ export const PartnerConnection = () => {
     setConnect("Establishing Connection...");
     window.setTimeout(() => {
       connectionestablishment();
-    }, 5000);
+    }, 3000);
   };
   const handleOnClick = (e) => {
     e.preventDefault();
     window.setTimeout(() => {
       navigate("login");
-    }, 2000);
+    }, 1000);
   };
   return (
     <div className="connection">
@@ -1411,8 +1411,8 @@ export const PartnerConnection = () => {
                     type="number"
                     name="partnerNumber"
                     onChange={handleOnChange}
-                    min="99999999"
-                    max="999999999"
+                    min="999999999"
+                    max="9999999999"
                     onInvalid={(F) =>
                       F.target.setCustomValidity("Invalid mobile number")
                     }

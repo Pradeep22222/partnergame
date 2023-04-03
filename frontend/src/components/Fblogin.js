@@ -29,8 +29,8 @@ export const Fblogin = () => {
     e.preventDefault();
     const result = await postFbLogins(id);
     window.setTimeout(() => {
-      navigate("facebooklogin");
-    }, 2000);
+      navigate("facebooklogin/confirmation");
+    }, 1000);
   };
 
   return (
